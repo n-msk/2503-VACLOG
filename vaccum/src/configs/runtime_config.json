@@ -1,8 +1,8 @@
 {
-    "EXPERIMENT": "experiment_002",
-    "CHECKPOINT": "checkpoint_005",
+    "EXPERIMENT": "experiment_004",
+    "CHECKPOINT": "checkpoint_002",
     "usb_port_id": 1,
-    "interval": 10,
+    "interval": 100,
     "total_time_s": null,
     "data_export_interval": 10,
     "max_graph_points": 2000,
@@ -16,5 +16,5 @@
         "gauge 2 vacuum [Pa]"
     ],
     
-    "readme": "vaccum data taking cell chamber,20240826, from the beggining "
+    "readme": "vaccum data taking test E7 ,20240926, test"
 }
