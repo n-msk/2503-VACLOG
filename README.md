@@ -1,6 +1,11 @@
-# vaccum log インストール手順
+# 機能
 
-Windowsの場合はWSL（Windows Subsystem for Linux）をインストールして以下の手順をふむか，対応する手順を何かしらで行う．
+Pfeiffer ゲージコントローラとUSB接続して，真空度スニペットの表示と真空ログを行う．
+真空ログの例は`/vaccum/data/experiments/`を参照．
+
+# インストール手順
+
+Windowsの場合はWSL（Windows Subsystem for Linux）をインストールして以下の手順をふむか，対応する手順をpowershell等で行う．
 WSLをインストールする場合、[公式ガイド](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参照
 
 
@@ -34,15 +39,18 @@ cd vaccum
 git lfs pull
 ```
 
-## 5. 環境構築
-プロジェクトディレクトリで以下を実行し、環境をセットアップ
+## 5. Python
+まだであれば，好みの環境でpythonをインストール．
 
+続けて，
 ```sh
-bash env_start.sh
+pip install requirements.txt
 ```
 
+
 ## 6. 設定ファイルの編集
-必要に応じて `vaccum/src/configs` 内の設定ファイルを編集．特に`EXPERIMENT`, `CHECKPOINT`はユニークな名称に設定．
+必要に応じて `vaccum/src/configs` 内の設定ファイルを編集．特に`EXPERIMENT`, `CHECKPOINT`はユニークな名称に設定．`usb_port_id`はUSB接続ごとに対応するポート番号を入力（一番忘れがち）．
+`data_header`は機種による．
 
 ## 7. プログラムの実行
 `vaccum` ディレクトリで以下を実行
