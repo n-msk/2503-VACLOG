@@ -1,6 +1,6 @@
 # vaccum log インストール手順
 
-##1. Windowsの場合はWSL（Windows Subsystem for Linux）をインストールして以下の手順をふむか，対応する手順を何かしらで行う．
+Windowsの場合はWSL（Windows Subsystem for Linux）をインストールして以下の手順をふむか，対応する手順を何かしらで行う．
 WSLをインストールする場合、[公式ガイド](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参照
 
 
